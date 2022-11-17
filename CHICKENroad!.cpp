@@ -1,7 +1,4 @@
 //CHICKENroad.cpp
-//Cory Cagle
-//CS I
-//Notes
 //Chicken crossin the road
 //October 5, 2022
 
@@ -27,9 +24,12 @@ char road[42] = "--------------------+--------------------";
 	road[pos]='+';
 	usleep(75000);
 	}		
-	
+	int answer;
 	cout<<"Did you guess right?\n";
 	cout<<endl;
+	cin>>answer;
+	if(answer==y)cout<<"Good job!\n";
+	if(answer==n)cout<<"Ha!\n";
 	cout<<endl;
 	cout<<"I'll be back! Program terminated...\n";
 	return 0;
